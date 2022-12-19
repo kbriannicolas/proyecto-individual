@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+}
+
+.encabezado {
+    background-color: #EAC926;
+    font-family: 'Roboto', sans-serif;
+}
+
+.logo {
+    margin-left: 20px;
+    height: 50%;
+    width: 44%;
+
+}
+
+body {
+    font-size: 12px;
+    background-color: #ebebeb;
+}
+
+.titulares {
+    font-size: 24px;
+}
+
+p {
+    font-size: 18px;
+}
+
+p strong {
+    font-size: 16px;
+}
+
+.strong {
+    font-weight: normal;
+    color: rgb(145, 221, 31);
+}
+
+.burger-menu {
+    color: #ebebeb;
+    text-align: center;
+    font-size: 300%;
+
+}
+
+.azul {
+    background-color: #03264C;
+}
+
+.box {
+    margin: auto;
+    width: 300px;
+    height: 50px;
+
+}
+
+.center {
+    text-align: center;
+}
+
+footer span {
+    font-size: 2em;
+    color: #03264C;
+    margin-top: 10px;
+}
+
+article img {
+    width: 70vw;
+    box-shadow: 1px 1px rgba(0, 0, 0, 0.258);
+
+}
+
+
+.burger-menu {
+    text-align: center;
+    padding: 10px;
+    font-size: 200%;
+
+}
+
+.fa-bars {
+    color: #ebebeb;
+    background-color: #1259c3;
+    padding: 5px;
+    font-size: 100%;
+    border-radius: 2px;
+
+}
+
+.i-header {
+    padding: 2px;
+    background-color: #ebebeb;
+    width: 12px;
+}
+
+.section-header {
+    margin-left: 10px;
+}
+
+.nav-header {
+    margin-left: -2%;
+}
+
+.main {
+    margin: auto;
+    width: 90%;
+}
+
+article {
+    margin: 10px;
+}
+
+article div {
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+    background-color: white;
+    width: 70vw;
+    box-shadow: 1px 1px rgba(0, 0, 0, 0.258);
+}
+
+.logoiarticle {
+    color: rgb(145, 221, 31);
+    margin-top: 20px;
+    font-size: 160%;
+    border-radius: 20px;
+    border: 3px solid;
+    padding-right: 27px;
+    border-radius: 54px;
+    padding-bottom: 30px;
+    padding-top: 7px;
+    padding-left: 5px;
+
+}
+
+@media(min-width:0px) {
+    .pstrong {
+        display: none;
+    }
+
+    .nav-header {
+        display: none;
+    }
+}
+
+@media(min-width:361px) {
+    .pstrong {
+        display: block;
+    }
+
+    .nav-header {
+        display: block;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+}
