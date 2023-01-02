@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/stylesregister.css">
+    <script src="https://kit.fontawesome.com/7b924e2171.js" crossorigin="anonymous"></script>
+    <link
+        href="https://fonts.googleapis.com/css2? family=Lato:ital,wght@0,100;0,300;1,100&family=Roboto:wght@300&display=swap"
+        rel="stylesheet">
+    <title>Creá tu cuenta</title>
+</head>
+<body>
+     <header>
+        <section class="section-header">
+            <h1>Crea tu cuenta</h1>
+            <i class="fa-regular fa-file-invoice"></i>
+        </section>
+      
+     </header>
+
+     <main>
+        <section>
+            <form action="registro" method="post" class="create-form-register" >
+                <div>
+                    <input type="text" name="nombre-apellido" placeholder="Nombre y Apellido" class="input-type-text" required>
+                    <span class="validity"></span>
+                </div>
+                <div>
+                    <input type="text" name="usuario" placeholder="Nombre de Usuario"  class="input-type-text" required>
+                    <span class="validity"></span>
+                </div>
+                <div >
+                    <input type="email" name="email" placeholder="Email"  class="input-type-text" required>
+                    <span class="validity"></span>
+                </div>
+                <div class="divfechadenacimiento">
+                    <label class="texto-fechadenacimiento">
+                        fecha de nacimiento
+                    </label>
+                    <div>
+                        <input type="date" name="fechadenacimiento" class="input-fechadenacimiento" required>
+                        <span class="validity"></span>
+                    </div>
+                    
+                </div>
+                <div>
+                    <input type="text" name="domicilio" placeholder="Domicilio"  class="input-type-text" required>
+                    <span class="validity"></span>
+                </div>
+                <div class="perfildelusurio">
+                    <label >Perfil del usuario</label>
+                    <div>
+                        <label ><input type="radio" name="perfildeusuario" >comprador</label>
+                        <label ><input type="radio" name="perfildeusuario">vendedor</label>
+                    </div>
+                   
+                </div>
+                <div class="divconinterese">
+                    <label > Intereses</label>
+                    <div>
+                        <label ><input type="checkbox" name="intereses" > Electro</label>
+                        <label ><input type="checkbox" name="intereses" > Moda</label>
+                        <label ><input type="checkbox" name="intereses" > Hogar</label>
+                        <label ><input type="checkbox" name="intereses" > Juguetería</label>
+                        <label ><input type="checkbox" name="intereses" > Vida sana</label>
+                    </div>
+                 </div>
+        
+                 <div class="divconfotos">
+                    <label > Foto de usuario</label>
+                    <div>
+                        <input type="file" name="foto" required>
+                        <span class="validity"></span>
+                    </div>
+                   
+                 </div>
+                 <div class="divconcontraseña">
+                    <label > Contraseña</label>
+                    <div>
+                        <input type="password" name="contraseña" placeholder="nueva contraseña"  class="input-type-text" required>
+                        <span class="validity"></span>
+                    </div>
+                    
+                 </div>
+                 <div class="divconcontraseña">
+                    <label >Repetir contraseña</label>
+                    <div>
+                        <input type="password" name="repitacontraseña" placeholder="vuelva a ingresar contraseña"  class="input-type-text" required>
+                        <span class="validity"></span>
+                    </div>
+                   
+                 </div>
+        
+                 <div>
+                    <button type="reset"> Borrar</button>
+                    <button type="submit">Enviar</button>
+                 </div>
+              
+            </form>
+        </section>
+        
+     </main>
+    
+</body>
+</html>

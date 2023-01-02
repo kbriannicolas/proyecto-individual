@@ -1,0 +1,64 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    background-color: #EAC926;
+    margin: 0 50px;
+    font-size: 27px;
+
+}
+
+.section-main form {
+    background-color: rgba(128, 128, 128, 0.2);
+}
+
+.section-main input {
+    width: 60%;
+}
+
+.section-main button {
+    background-color: #1259c3;
+    width: 60%;
+    color: white;
+}
+
+input:invalid+span::after {
+    content: "✖";
+}
+
+input:valid+span::after {
+    content: "✓";
+}
+
+
+@media(min-width:768px) {
+    body {
+        font-size: 35px;
+    }
+
+    .section-header {
+        display: flex;
+        justify-content: center;
+    }
+
+    .section-header i {
+        margin-top: 14px;
+    }
+
+    main {
+        font-size: 65px;
+    }
+
+    .section-main input {
+        font-size: 21px;
+    }
+
+    .section-main button {
+        font-size: 21px;
+    }
+}

@@ -1,0 +1,75 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    width: 70vw;
+    margin: 20px;
+    font-family: 'Roboto', sans-serif;
+    background-color: #EAC926;
+}
+.section-header{
+    display:flex;
+}
+.section-header i{
+    margin-top: 8px;
+}
+.create-form-register{
+    background-color: rgba(128, 128, 128, 0.2);
+}
+.create-form-register div{
+    margin: 12px;
+}
+.input-type-text{
+    border-radius: 4px;
+    font-size: 12px;
+}
+.divfechadenacimiento div{
+    margin: 0px;
+}
+.perfildelusurio div{
+    margin: 0px;
+}
+.divconinterese div{
+    display: grid;
+    margin: 0px;
+}
+.divconfotos div{
+    margin: 0px;
+}
+.divconfotos input{
+    font-size: 7px;
+    
+}
+.divconcontraseña div{
+    margin: 0px;
+}
+input:invalid+span::after {
+    content: "✖";
+    color: red;
+}
+
+input:valid+span::after {
+    content: "✓";
+    color: green;
+}
+
+
+@media(min-width:768px){
+    body{
+        font-size: 30px;
+    }
+    .input-type-text{
+        font-size: 20px;
+    }
+    .divfechadenacimiento input{
+        font-size: 20px;
+    }
+    .divconfotos input{
+        font-size: 20px;
+    }
+    button{
+        font-size: 20px;
+    }
+}

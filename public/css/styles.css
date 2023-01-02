@@ -1,5 +1,7 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0%;
 }
 
 .encabezado {
@@ -10,7 +12,7 @@
 .logo {
     margin-left: 20px;
     height: 50%;
-    width: 44%;
+    width: 50%;
 
 }
 
@@ -65,7 +67,7 @@ footer span {
 }
 
 article img {
-    width: 70vw;
+    width: 30vw;
 
 
 }
@@ -111,32 +113,44 @@ article {
 }
 
 article div {
-    border-top: 1px solid #ebebeb;
-    padding: 15px;
     background-color: white;
-    width: 70vw;
+    width: 30vw;
 
+}
+
+.divsection {
+    border-top: 1px solid #ebebeb;
+}
+
+.divsection .div2p {
+    display: flex;
+
+}
+
+.div2p .pconprecio {
+    width: 30%;
 }
 
 .logoiarticle {
-    color: rgb(145, 221, 31);
-    margin-top: 20px;
-    font-size: 160%;
-    border-radius: 20px;
-    border: 3px solid;
-    padding-right: 27px;
-    border-radius: 54px;
-    padding-bottom: 30px;
-    padding-top: 7px;
-    padding-left: 5px;
-
+    color: #39b54a;
+    margin: auto;
+    padding: 5px;
+    position: relative;
+    left: 80%;
+    bottom: 20px;
+    border: 1px solid #39b54a;
+    font-size: 16px;
+    border-radius: 53px;
+    display: block;
 }
+
 
 .banner {
-    width: 100vw;
-    margin-left: -5vw;
-    margin-top: 0vw;
+    width: 100%;
+
 }
+
+
 
 @media(min-width:0px) {
     .pstrong {
@@ -146,7 +160,54 @@ article div {
     .nav-header {
         display: none;
     }
+
+    .section-logo-searchbar {
+        display: flex;
+    }
+
+    .i-header {
+        padding: 1px;
+        display: inline-block;
+        margin: -4px;
+    }
+
+    .section-header {
+        margin: auto;
+        width: 50%;
+        font-size: 93%;
+    }
+
+    .divconh4 {
+        position: absolute;
+        bottom: 92%;
+        left: 22%;
+        font-size: 8px;
+    }
+
+    p {
+        font-size: 9px;
+    }
+
+    .divparalosarticles {
+        display: block;
+    }
+
+    .divparalosarticles article img {
+        width: 70vw;
+    }
+
+    .divparalosarticles article div {
+        width: 70vw;
+    }
+
+    .logoiarticle {
+        left: 82%;
+        bottom: 13px;
+        font-size: 14px;
+    }
+
 }
+
 
 @media(min-width:361px) {
     .pstrong {
@@ -155,10 +216,60 @@ article div {
 
     .nav-header {
         display: block;
+        margin-left: 0%;
+        font-size: 8px;
+        
+    }
+    .sectionconnavs{
+        display: flex;
+        justify-content: space-between;
+    }
+    .nav-header ul{
+        display: flex;
+        list-style: none;
+    }
+    .nav-header li{
+        margin: 0 5px;
+    }
+    .nav-header a{
+        text-decoration: none;
+        color: black;
+    }
+
+    .section-logo-searchbar {
+        justify-content: space-between;
+
+    }
+
+    .divconh4 {
+        position: relative;
+        font-size: 10px;
+        bottom: auto;
+        left: initial;
+        font-size: 7px;
+        margin: auto;
+        align-items: center;
+        font-weight: 400;
+        width: 50%;
+    }
+
+    .i-header {
+        padding: 2px;
+    }
+
+    .logo {
+        margin: 10px;
+        width: 30%;
     }
 
     .burger-menu {
         display: none;
+    }
+
+    .section-header {
+        margin: auto;
+        font-size: 52%;
+        width: 28vw;
     }
 
     article div {
@@ -168,4 +279,68 @@ article div {
     article img {
         box-shadow: 1px 1px rgba(0, 0, 0, 0.258);
     }
+
+    .divparalosarticles {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .divparalosarticles article img {
+        width: 37vw;
+    }
+
+    .divparalosarticles article div {
+        width: 37vw;
+    }
+
+}
+
+@media (min-width:768px){
+    .nav-header{
+        font-size: 12px;
+    }
+    .logo {
+        margin: 22px;
+        width: 38%;
+    }
+
+    .section-header {
+        margin: 51px;
+        font-size: 130%;
+        width: 38vw;
+    }
+
+    .divconh4 {
+        font-size: 12px;
+    }
+
+    .i-header {
+        width: 22px;
+    }
+
+}
+
+@media(min-width:1200px) {
+    .section-header{
+        font-size: 196%;
+    }
+    .i-header{
+        width: 34px;
+    }
+    .divconh4{
+        font-size: 22px;
+    }
+    .divparalosarticles {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .divparalosarticles article img {
+        width: 21vw;
+    }
+
+    .divparalosarticles article div {
+        width: 21vw;
+    }
+
 }
