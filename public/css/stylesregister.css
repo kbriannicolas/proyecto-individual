@@ -4,17 +4,12 @@
     box-sizing: border-box;
 }
 body{
-    width: 70vw;
-    margin: 20px;
     font-family: 'Roboto', sans-serif;
-    background-color: #EAC926;
 }
 .section-header{
     display:flex;
 }
-.section-header i{
-    margin-top: 8px;
-}
+
 .create-form-register{
     background-color: rgba(128, 128, 128, 0.2);
 }
@@ -57,7 +52,7 @@ input:valid+span::after {
 
 
 @media(min-width:768px){
-    body{
+    main{
         font-size: 30px;
     }
     .input-type-text{
