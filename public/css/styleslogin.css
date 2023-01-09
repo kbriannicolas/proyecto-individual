@@ -24,6 +24,12 @@ main {
     color: white;
     margin-left: -14px;
 }
+.enviar{
+    transition: all 1000ms;
+}
+.enviar:hover{
+    background-color: #0022AA;
+}
 
 input:invalid+span::after {
     content: "✖";

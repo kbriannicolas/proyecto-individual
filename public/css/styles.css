@@ -16,6 +16,10 @@
 
 }
 
+.encabezado form{
+    position: relative;
+}
+
 body {
     font-size: 12px;
     background-color: #ebebeb;
@@ -91,8 +95,7 @@ article img {
 
 .i-header {
     padding: 2px;
-    background-color: #ebebeb;
-    width: 12px;
+    width: 10px;
 }
 
 .section-header {
@@ -120,6 +123,11 @@ article div {
 
 .divsection {
     border-top: 1px solid #ebebeb;
+    transition: all 400ms;
+}
+
+.divsection:hover {
+    box-shadow: 5px 5px rgba(194, 234, 182, 1);
 }
 
 .divsection .div2p {
@@ -142,7 +150,14 @@ article div {
     font-size: 16px;
     border-radius: 53px;
     display: block;
+    transition: all 1000ms;
 }
+
+.logoiarticle:hover {
+    transform: rotatez(-90deg);
+}
+
+
 
 
 .banner {
@@ -152,9 +167,15 @@ article div {
 
 
 
+
 @media(min-width:0px) {
     .pstrong {
-        display: none;
+        opacity: 0;
+        transition: all 1000ms;
+    }
+
+    .pstrong:hover {
+        opacity: 1;
     }
 
     .nav-header {
@@ -166,15 +187,22 @@ article div {
     }
 
     .i-header {
-        padding: 1px;
+        padding: 2px;
         display: inline-block;
-        margin: -4px;
+       position: absolute;
+       right: 12%;
+       border-left: solid 1px rgba(128, 128, 128, 0.2);
     }
 
     .section-header {
         margin: auto;
         width: 50%;
         font-size: 93%;
+    }
+
+    .section-header input {
+        width: 90%;
+        position: relative;
     }
 
     .divconh4 {
@@ -218,20 +246,24 @@ article div {
         display: block;
         margin-left: 0%;
         font-size: 8px;
-        
+
     }
-    .sectionconnavs{
+
+    .sectionconnavs {
         display: flex;
         justify-content: space-between;
     }
-    .nav-header ul{
+
+    .nav-header ul {
         display: flex;
         list-style: none;
     }
-    .nav-header li{
+
+    .nav-header li {
         margin: 0 5px;
     }
-    .nav-header a{
+
+    .nav-header a {
         text-decoration: none;
         color: black;
     }
@@ -295,10 +327,11 @@ article div {
 
 }
 
-@media (min-width:768px){
-    .nav-header{
+@media (min-width:768px) {
+    .nav-header {
         font-size: 12px;
     }
+
     .logo {
         margin: 22px;
         width: 38%;
@@ -321,15 +354,18 @@ article div {
 }
 
 @media(min-width:1200px) {
-    .section-header{
+    .section-header {
         font-size: 196%;
     }
-    .i-header{
+
+    .i-header {
         width: 34px;
     }
-    .divconh4{
+
+    .divconh4 {
         font-size: 22px;
     }
+
     .divparalosarticles {
         display: flex;
         flex-wrap: nowrap;
@@ -343,4 +379,18 @@ article div {
         width: 21vw;
     }
 
+    footer {
+        display: flex;
+        font-size: 28px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .i-footer {
+        transition: all 1000ms;
+    }
+
+    .i-footer:hover {
+        color: #0022AA;
+    }
 }
