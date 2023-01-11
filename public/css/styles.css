@@ -329,7 +329,7 @@ article div {
 
 @media (min-width:768px) {
     .nav-header {
-        font-size: 12px;
+        font-size: 17px;
     }
 
     .logo {
@@ -350,7 +350,9 @@ article div {
     .i-header {
         width: 22px;
     }
-
+    .div2p p{
+        font-size: 20px;
+    }
 }
 
 @media(min-width:1200px) {
@@ -381,7 +383,7 @@ article div {
 
     footer {
         display: flex;
-        font-size: 28px;
+        font-size: 25px;
         flex-wrap: wrap;
         justify-content: space-between;
     }

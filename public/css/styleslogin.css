@@ -51,9 +51,12 @@ input:valid+span::after {
     .section-main input {
         font-size: 21px;
     }
+    .create-form-login span{
+        font-size: 10px;
+    }
 
     .section-main button {
         font-size: 21px;
-        margin-left: -74px;
+        margin-left: -23px;
     }
 }
